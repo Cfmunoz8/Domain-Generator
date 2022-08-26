@@ -14,3 +14,10 @@ for (let i=0; i < pronoun.length; i++){
     }    
 }
 console.log (myDomain)
+
+let ul = document.querySelector("#opciones");
+for(let opcion of myDomain){
+    let li = document.createElement("li");
+    li.innerHTML = opcion;
+    ul.append (li);
+}
